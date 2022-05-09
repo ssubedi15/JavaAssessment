@@ -80,7 +80,7 @@ public class CSVFileReader {
             Collections.sort(enrollees.get(entry.getValue().get(0).getInsuranceCompany()), compareByName);
 
             // create a write
-            String fileName="C:\\tempFile\\insuranceFile"+count+".csv";
+            String fileName="tempFile\\insuranceFile"+count+".csv";
             Writer writer = Files.newBufferedWriter(Paths.get(fileName));
 
             // header record
